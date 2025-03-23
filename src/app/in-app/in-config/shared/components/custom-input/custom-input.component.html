@@ -1,0 +1,37 @@
+<div [ngSwitch]="type">
+    <kendo-textbox *ngSwitchCase="'text'"
+      [placeholder]="placeholder"
+      [readonly]="readonly"
+      [disabled]="disabled"
+      [title]="title"
+      [(ngModel)]="innerValue"
+      (ngModelChange)="onInputChange($event)"
+      (blur)="onBlur($event)"
+      (focus)="onFocus($event)">
+    </kendo-textbox>
+    
+    <kendo-textarea *ngSwitchCase="'textarea'"
+      [placeholder]="placeholder"
+      [readonly]="readonly"
+      [disabled]="disabled"
+      [title]="title"
+      [resizable]="resizable"
+      [(ngModel)]="innerValue"
+      (ngModelChange)="onInputChange($event)"
+      (blur)="onBlur($event)"
+      (focus)="onFocus($event)">
+    </kendo-textarea>
+
+    <kendo-numerictextbox *ngSwitchCase="'numeric'"
+      [placeholder]="placeholder"
+      [readonly]="readonly"
+      [disabled]="disabled"
+      [title]="title"
+      [format]="'n0'" 
+      [(ngModel)]="innerValue"
+      (ngModelChange)="onInputChange($event)"
+      (blur)="onBlur($event)"
+      (focus)="onFocus($event)">
+    </kendo-numerictextbox>
+  </div>
+  
