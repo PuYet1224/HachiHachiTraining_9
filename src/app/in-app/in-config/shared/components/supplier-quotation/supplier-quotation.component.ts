@@ -8,18 +8,18 @@ import { Component } from '@angular/core';
 export class SupplierQuotationComponent {
   data = [
     {
-      name: 'Hình 1',
+      name: 'Danh sách đề nghị báo giá',
       dtos: 'ResponseDTO, SuppliersDTO',
       apis: 'GetListSupplier, GetStatusSupplier, GetEffectiveDateRange'
     },
     {
-      name: 'Hình 2',
+      name: 'Chi tiết đề nghị báo giá',
       dtos: 'ResponseDTO, SuppliersDTO, ProductQuotationDTO',
       apis: 'GetListSupplier, GetListProductQuotation, GetImport, GetUpload, DeleteProductQuotation, GetStatusSupplier'
     },
     {
-      name: 'Hình 3',
-      dtos: 'ResponseDTO, ProductQuotationDTO, ProductDetailDTO',
+      name: 'Chi tiết đề nghị báo giá - Thông tin chi tiết đề nghị',
+      dtos: 'ResponseDTO, ProductQuotationDTO, ProductDetailDTO, DimensionDTO',
       apis: 'GetListSupplier, GetListProductQuotation, GetListCountries, GetListCurrency, GetEventCommerce, GetPurchaseUnit, GetPurchaseDate, GetListGrouping, GetBaseUnit, GetRetailStores, GetProductDimensionDefault, UpdateProductQuotation'
     }
   ];

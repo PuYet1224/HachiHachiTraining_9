@@ -1,5 +1,5 @@
 <kendo-grid [data]="data">
-    <kendo-grid-column field="name" title="Hình"></kendo-grid-column>
+    <kendo-grid-column field="name" title="Tên UI"></kendo-grid-column>
     <kendo-grid-column title="DTO Sử Dụng">
       <ng-template kendoGridCellTemplate let-dataItem>
         <span *ngFor="let dto of dataItem.dtos.split(','); let last = last">
